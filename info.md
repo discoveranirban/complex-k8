@@ -5,3 +5,9 @@
 5: minikube stop
 6: minikube tunnel
 7: go to localhost on browser
+
+to update with latest docker image imperatively: kubectl set image deployment/client-deployment client=discoveranirban/multi-client:v5
+kubectl set image <objectType>/<objectName> <containerName>=discoveranirban/multi-client:v5
+
+minikube service <service-name> --url
+
